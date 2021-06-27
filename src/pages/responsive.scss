@@ -85,8 +85,6 @@
       width: 100%;
       position: relative;
       height: auto;
-      /* overflow-y: hidden; */
-      /* position: fixed; */
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -113,12 +111,4 @@
       }
     }
   }
-}
-
-// Desktop, large screens
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-}
-
-// Extra large screens, TV
-@media screen and (min-width: 1201px) {
 }

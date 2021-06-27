@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
-import Fade from "@material-ui/core/Fade";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -27,14 +26,6 @@ export default function SignupResponse({ openModal }) {
     localStorage.getItem("userName") || "New User"
   );
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   useEffect(() => {
     console.log("openModal", openModal);
   }, [openModal]);
@@ -55,12 +46,10 @@ export default function SignupResponse({ openModal }) {
           timeout: 500,
         }}
       >
-        {/* <Fade in={open}> */}
         <div className={classes.paper}>
           <h2 id="modal-title">Sign up successfull</h2>
           <p id="modal-description">{`Welcome ${userName}`}</p>
         </div>
-        {/* </Fade> */}
       </Modal>
     </div>
   );
