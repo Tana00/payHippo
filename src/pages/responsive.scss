@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300;400;500;600&display=swap");
+
+// Mobile Devices
+@media screen and (max-width: 480px) {
+  #container {
+    display: block;
+    font-family: "Raleway", sans-serif;
+    #mobile_header {
+      display: block;
+      background-color: #e6f0fd;
+      padding: 2rem;
+      p {
+        font-weight: 600;
+      }
+    }
+    #img_sec {
+      display: none;
+    }
+    #form_sec {
+      left: 0;
+      width: 100%;
+      padding: 0;
+      background-color: white;
+      min-height: auto;
+      #form_wrapper {
+        padding: 2rem;
+        box-shadow: none;
+      }
+      .makeStyles-root-1 {
+        display: none;
+      }
+    }
+  }
+}
+
+// iPads,Tablets
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #container {
+    display: block;
+    font-family: "Raleway", sans-serif;
+    background-color: #e6f0fd;
+    height: 100vh;
+    #mobile_header {
+      display: block;
+      background-color: #e6f0fd;
+      padding: 1rem;
+      p {
+        font-weight: 600;
+      }
+    }
+    #img_sec {
+      display: none;
+    }
+    #form_sec {
+      left: 0;
+      width: 100%;
+      padding: 0;
+      min-height: auto;
+      #form_wrapper {
+        padding: 2rem;
+        margin: 1rem 2rem 0;
+        min-height: 80vh;
+      }
+      .makeStyles-root-1 {
+        display: none;
+      }
+    }
+  }
+}
+
+// Small screens, laptops
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #container {
+    display: block;
+    font-family: "Raleway", sans-serif;
+    background-color: #e6f0fd;
+    height: 100vh;
+    padding: 0;
+    display: block;
+    #img_sec {
+      background-color: #0f2262;
+      padding: 3rem;
+      display: flex;
+      background-color: #0f2262;
+      width: 100%;
+      position: relative;
+      height: auto;
+      /* overflow-y: hidden; */
+      /* position: fixed; */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        display: none;
+      }
+      #heading {
+        width: 80%;
+      }
+    }
+    #form_sec {
+      left: 0;
+      width: 100%;
+      padding: 0;
+      min-height: auto;
+      #form_wrapper {
+        padding: 2rem;
+        margin: 1rem 2rem 0;
+        min-height: 80vh;
+      }
+      .makeStyles-root-1 {
+        display: none;
+      }
+    }
+  }
+}
+
+// Desktop, large screens
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+// Extra large screens, TV
+@media screen and (min-width: 1201px) {
+}
