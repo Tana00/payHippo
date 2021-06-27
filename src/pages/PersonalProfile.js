@@ -439,6 +439,7 @@ class PersonalProfile extends Component {
                 if (this.state.value !== "") {
                   if (this.state.value.length === 14) {
                     // console.log(this.state.value.length);
+                    localStorage.setItem("userName", values.name);
                     history.push("/verify", {
                       state: this.state.value,
                     });

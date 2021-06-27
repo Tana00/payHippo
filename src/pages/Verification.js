@@ -6,6 +6,7 @@ import * as Yup from "yup";
 import { formatPhoneNumberIntl } from "react-phone-number-input";
 
 import Steppers from "../components/Steppers";
+import Modal from "../components/Modal";
 
 import "./style.scss";
 
@@ -16,6 +17,7 @@ class Verification extends Component {
       step: 1,
       phoneNumber: "",
       count: 60,
+      open: false,
     };
   }
 
@@ -419,7 +421,7 @@ class Verification extends Component {
                 //   alert(JSON.stringify(values, null, 2));
                 //   setSubmitting(false);
                 // }, 400);
-                this.setState({ activeStep: 2 });
+                this.setState({ open: true });
               }}
             >
               <Form style={{ marginTop: "3rem" }}>
@@ -454,6 +456,7 @@ class Verification extends Component {
             </a>
           </div>
         </div>
+        <Modal openModal={this.state.open} />
       </div>
     );
   }
